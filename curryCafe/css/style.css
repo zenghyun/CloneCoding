@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEA45;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 45px repeat(2, minmax(250px, 1fr)) 45px;
+  grid-template-rows: 35px 50vh 40vh 35px;
+  border: 4px solid #FF6C2C;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main header {
+  grid-column: 1/5;
+  border-bottom: 4px solid #FF6C2C;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+main header .circle {
+  width: 100%;
+  color: #FF6C2C;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+  width: 100%;
+  left: 100%;
+  position: absolute;
+  animation: circleLeft 14s infinite;
+}
+main header .circle2 {
+  animation-delay: 7s;
+}
+main .leftUp {
+  grid-row: 2/3;
+  font-size: 22px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  width: 45px;
+  line-height: 45px;
+  letter-spacing: 4px;
+  background-color: #FF6C2C;
+  color: white;
+  border-right: 4px solid #FF6C2C;
+}
+main .leftDown {
+  grid-row: 3/4;
+  background-color: palegreen;
+  font-size: 22px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: center;
+  width: 45px;
+  line-height: 45px;
+  letter-spacing: 3px;
+  background-color: white;
+  color: #FF6C2C;
+  border-left: 4px solid #FF6C2C;
+}
+main .rightUp {
+  grid-row: 2/3;
+  background-color: #40AC49;
+  border: 4px solid #FF6C2C;
+  border-top: none;
+  border-right: none;
+  font-size: 24px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  width: 45px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  color: white;
+}
+main .rightDown {
+  grid-row: 3/4;
+  background-color: #40AC49;
+  border-left: 4px solid #FF6C2C;
+  font-size: 20px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  width: 45px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  color: white;
+}
+main .leftSection {
+  grid-row: 2/4;
+  background-image: url(../img/leader-10.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+main .leftSection img {
+  position: absolute;
+  width: 430px;
+  height: 340px;
+  top: 25%;
+  left: 75%;
+}
+main .rightSection {
+  grid-row: 2/4;
+  background-image: url(../img/leader-02.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+main footer {
+  grid-column: 1/5;
+  border-top: 4px solid #FF6C2C;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+}
+main footer .circle {
+  width: 100%;
+  color: #FF6C2C;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+  width: 100%;
+  right: 100%;
+  position: absolute;
+  animation: circleRight 14s infinite;
+}
+main footer .circle2 {
+  animation-delay: 7s;
+}
+
+@keyframes circleLeft {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes circleRight {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .leftSection img {
+    display: none;
+  }
+}
+@media screen and (max-width: 890px) {
+  .rightSection {
+    display: none;
+  }
+  .leftSection {
+    grid-column: 2/4;
+  }
+  .leftSection img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

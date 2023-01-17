@@ -1,0 +1,206 @@
+@import "reset.scss";
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEA45;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+main {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 45px repeat(2, minmax(250px, 1fr)) 45px;
+  grid-template-rows: 35px 50vh 40vh 35px;
+  border: 4px solid #FF6C2C;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  header {
+    grid-column: 1/5;
+    border-bottom: 4px solid #FF6C2C;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+
+    & .circle {
+      width: 100%;
+      color: #FF6C2C;
+      font-size: 25px;
+      text-align: center;
+      line-height: 30px;
+      width: 100%;
+      left: 100%;
+      position: absolute;
+      animation: circleLeft 14s infinite;
+    }
+
+    & .circle2 {
+      animation-delay: 7s;
+    }
+
+  }
+
+  .leftUp {
+    grid-row: 2/3;
+    font-size: 22px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    width: 45px;
+    line-height: 45px;
+    letter-spacing: 4px;
+    background-color: #FF6C2C;
+    color: white;
+    border-right: 4px solid #FF6C2C;
+  }
+
+  .leftDown {
+    grid-row: 3/4;
+    background-color: palegreen;
+    font-size: 22px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    width: 45px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    background-color: white;
+    color: #FF6C2C;
+    border-left: 4px solid #FF6C2C;
+  }
+
+  .rightUp {
+    grid-row: 2/ 3;
+    background-color: #40AC49;
+    border: 4px solid #FF6C2C;
+    border-top: none;
+    border-right: none;
+    font-size: 24px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    width: 45px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    color: white;
+  
+  }
+
+  .rightDown {
+    grid-row: 3/ 4;
+    background-color: #40AC49;
+    border-left: 4px solid #FF6C2C;
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+    width: 45px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    color: white;
+  }
+
+  .leftSection {
+    grid-row: 2 / 4;
+    background-image: url(../img/leader-10.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    & img {
+      position: absolute;
+      width: 430px;
+      height: 340px;
+      top: 25%;
+      left: 75%;
+    }
+  }
+
+
+  .rightSection {
+    grid-row: 2 / 4;
+    background-image: url(../img/leader-02.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  footer {
+    grid-column: 1/5;
+    border-top: 4px solid #FF6C2C;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+
+    & .circle {
+      width: 100%;
+      color: #FF6C2C;
+      font-size: 25px;
+      text-align: center;
+      line-height: 30px;
+      width: 100%;
+      right: 100%;
+      position: absolute;
+      animation: circleRight 14s infinite;
+    }
+
+    & .circle2 {
+      animation-delay: 7s;
+    }
+  }
+}
+
+
+@keyframes circleLeft {
+  0% {
+    left: 100%;
+  }
+
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes circleRight {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@media screen and (max-width:1700px) {
+  .leftSection {
+    & img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:890px) {
+  .rightSection {
+    display: none;
+  }
+
+  .leftSection {
+    grid-column: 2/4;
+
+    & img {
+      display: none;
+    }
+  }
+}

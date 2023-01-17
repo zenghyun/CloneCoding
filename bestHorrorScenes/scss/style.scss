@@ -1,0 +1,141 @@
+@import "reset.scss";
+@import "_variable.scss";
+body{
+  box-sizing: border-box;
+  background-color: $mainColor;
+  height: 100vh;
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  width: 33%;
+  height: 100vh;
+  background-color: $asideColor;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    padding: 100px 180px 0 70px;
+    text-transform: uppercase;
+    width: 50%;
+      font-size: 70px;
+      display: block;
+      margin-bottom: 170px;
+      letter-spacing: 8px;
+      line-height: 70px;
+      color: $mainColor;
+      font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    }
+    z-index: 10;
+}
+.bottom {
+  padding-left: 70px;
+  
+  .firstParagraph {
+    color: $mainColor;
+    font-size: 23px;
+    width: 65%;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .secondParagraph{
+    color: $mainColor;
+    width: 72%;
+    font-weight: 550;
+    font-size: 17px;
+    line-height: 20px;
+    word-spacing: 0.1em;
+    margin-bottom: 35px;
+  }
+    nav {
+      width: 100%;
+      height: auto;
+      & ul {
+        display: flex;
+        font-size: 16px;
+        gap: 10px;
+        
+      }
+      & li {
+        cursor: pointer;
+        border-bottom: 1px solid black;
+        opacity: 0.5;
+        margin-bottom: 12px;
+      }
+      & li:hover{
+        opacity: 1;
+      }
+    }
+
+    .thirdParagraph{
+      margin-top: 20px;
+      width: 65%;
+      font-size: 11px;
+      line-height: 15px;
+    }
+}
+
+main {
+  margin-left: 33%;
+  .main-header {
+    width: 70%;
+    position: fixed;
+    height: 120px;
+    color: white;
+    background-color: #e7473ce3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.481);
+    text-align: center;
+    line-height: 120px;
+    z-index: 5;
+    & .text{
+      font-size: 20px;
+      background-color: #D03F36;
+      & .hoverText {
+        color: rgb(81, 80, 80);
+        border-bottom: 1px solid rgb(81, 80, 80);
+      }
+      & .hoverText:hover {
+        color: white;
+        border-bottom: 1px solid white;
+      }
+    }
+    
+  }
+    
+  .movie {
+    height: 100vh;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 5%,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    )
+    $mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    & .introduce {
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-around;
+      
+      & .title {
+        font-size: 60px;
+      }
+
+      & p:nth-child(2){
+        align-self: flex-end;
+      }
+    }
+  }
+  img {
+    width: 1000px;
+    margin: 40px 0 0 140px;
+    box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  }
+}
