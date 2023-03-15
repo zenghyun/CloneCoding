@@ -1,0 +1,232 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 1350px;
+  margin: 30px auto;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 300px 350px repeat(2, 125px) 100px repeat(2, 125px) 100px;
+  grid-template-rows: 300px repeat(2, 100px) 175px repeat(2, 100px);
+}
+section aside {
+  border: 3px solid black;
+  grid-row: 1/7;
+}
+section aside .title {
+  padding: 20px;
+}
+section aside .main-text {
+  font-size: 24px;
+  padding: 20px;
+}
+section aside .table {
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid black;
+}
+section aside .table p {
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid black;
+}
+section aside .table p:nth-child(1) {
+  background-color: lightgray;
+}
+section aside .table p:nth-last-child(1) {
+  border-bottom: none;
+}
+section aside .info {
+  margin-top: 100px;
+  padding-left: 20px;
+}
+section .top-article {
+  border: 3px solid black;
+  border-left: none;
+  grid-row: 4 span;
+  padding: 20px;
+}
+section .top-article .main-text {
+  padding-top: 50px;
+  font-size: 36px;
+}
+section .top-article .lorem-text {
+  padding-top: 30px;
+}
+section .bottom-article {
+  border: 3px solid black;
+  border-left: none;
+  border-top: none;
+  grid-column: 1 span;
+  grid-row: 5/7 span;
+  padding: 20px;
+}
+section .bottom-article p {
+  margin-top: 70px;
+  font-size: 24px;
+}
+section .image1 {
+  border: 3px solid black;
+  border-left: none;
+  grid-column: 3 span;
+  grid-row: 4 span;
+  background-image: url(../img/a1_office_a1_office_website_design_content_request_space_images_156248_0-1-e1525064845933.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section .image2 {
+  border: 3px solid black;
+  border-left: none;
+  grid-column: 3 span;
+  background-image: url(../img/A1-Clevertronics-135-2.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section .image3 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: 2 span;
+  grid-row: 2 span;
+  background-image: url(../img/A1-Clevertronics-135-2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section .image4 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: span;
+  grid-row: span;
+  background-image: url(../img/01_heart-02-e1525064747399.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section .image5 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: span;
+  grid-row: span;
+  background-image: url(../img/01_heart-02-e1525064747399.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section .image6 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: span;
+  grid-row: span;
+  background-image: url(../img/A1_Office_Office_Design_sustainable_office_design_Melbourne_VIC_3000-2.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section .image7 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: 2 span;
+  grid-row: span;
+  background-image: url(../img/OBrien-Keysborough-LR-068.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section .image8 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: span;
+  grid-row: 2 span;
+  background-image: url(../img/A1-Dr-Arun001.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section .image9 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: span;
+  grid-row: span;
+  background-image: url(../img/A1-Dr-Arun001.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section .image10 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: 4/1 span;
+  grid-row: 1 span;
+  background-image: url(../img/A1-Visy-Ess-Fields-080.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section .image11 {
+  border: 3px solid black;
+  border-top: none;
+  border-left: none;
+  grid-column: 5/4 span;
+  grid-row: 5/2 span;
+  background-image: url(../img/a1_office_a1_office_website_design_content_request_space_images_156248_0-1-e1525064845933.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

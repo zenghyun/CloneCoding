@@ -1,0 +1,458 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+main .eight-section .right-article06 p, main .sixth-section .right-article05 p, main .fifth-section .left-article04 p, main .fourth-section .right-article03 p, main .third-section .right-article02 p, main .first-section .right-article01 p {
+  font-size: 48px;
+  font-weight: 550;
+  font-family: "Explora", cursive;
+  width: 52%;
+}
+
+main .eight-section .right-article06 span, main .sixth-section .right-article05 span, main .fifth-section .left-article04 span {
+  position: absolute;
+  top: 35%;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+}
+
+main .eight-section .right-article06 .show-box, main .sixth-section .right-article05 .show-box, main .fifth-section .left-article04 .show-box, main .fourth-section .right-article03 .show-box, main .third-section .right-article02 .show-box, main .first-section .right-article01 .show-box {
+  position: absolute;
+  top: 65%;
+  width: 270px;
+  height: 55px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 55px;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+  cursor: pointer;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+main .eight-section .right-article06 .show-box:hover, main .third-section .right-article02 .show-box:hover, main .first-section .right-article01 .show-box:hover {
+  background-color: #414141;
+  color: #fff;
+}
+
+main .sixth-section .right-article05 .show-box:hover, main .fifth-section .left-article04 .show-box:hover, main .fourth-section .right-article03 .show-box:hover {
+  transform: translateX(20px);
+}
+
+main .eight-section, main .sixth-section, main .fifth-section, main .fourth-section, main .third-section, main .first-section {
+  margin-top: 80px;
+  width: 100%;
+  height: 812px;
+  display: flex;
+}
+
+main .eight-section .left-article06, main .sixth-section .left-article05, main .fifth-section .right-article04, main .fourth-section .left-article03, main .third-section .left-article02, main .first-section .left-article01 {
+  width: 50%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .eight-section .right-article06, main .sixth-section .right-article05, main .fifth-section .left-article04, main .fourth-section .right-article03, main .third-section .right-article02, main .first-section .right-article01 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main .ninth-section div:nth-child(8), main .ninth-section div:nth-child(7), main .ninth-section div:nth-child(6), main .ninth-section div:nth-child(5), main .ninth-section div:nth-child(4), main .ninth-section div:nth-child(3), main .ninth-section div:nth-child(2), main .ninth-section div:nth-child(1) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 0 auto;
+  width: 1640px;
+}
+main header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  margin-top: -80px;
+  background-color: #fff;
+  align-items: center;
+  font-family: "Abel", sans-serif;
+  font-size: 14px;
+  position: fixed;
+  z-index: 10;
+}
+main header .logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/logo.png);
+  background-size: cover;
+  background-position: center center;
+}
+main header nav {
+  width: 100%;
+}
+main header nav ul {
+  display: flex;
+  gap: 30px;
+  margin-left: 30px;
+}
+main header nav ul li:nth-child(3) {
+  margin-left: 1250px;
+}
+main header nav ul li:hover {
+  opacity: 0.5;
+}
+main .first-section {
+  background-color: #F3EDE8;
+}
+main .first-section .left-article01 {
+  background-image: url(../image/Screen_Shot_2023-01-17_at_10.16.38_AM_960x960_crop_center.png);
+}
+main .second-section {
+  width: 1640px;
+  height: 900px;
+  text-align: center;
+  padding-top: 50px;
+}
+main .second-section p {
+  font-size: 12px;
+  font-family: "Abel", sans-serif;
+  padding-bottom: 30px;
+}
+main .second-section h2 {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 40px;
+}
+main .second-section .item-container {
+  width: 1500px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .second-section .item-container .item-box {
+  width: 430px;
+  height: 650px;
+  cursor: pointer;
+}
+main .second-section .item-container .item-box .image-box {
+  margin: 30px auto;
+  width: 320px;
+  height: 400px;
+  transition: 1s;
+}
+main .second-section .item-container .item-box .image-box1 {
+  background-image: url(../image/LikeSatinPDP-1_320x400_crop_center.jpg);
+}
+main .second-section .item-container .item-box .image-box2 {
+  background-image: url(../image/PowerCouple-Cocoa_SageBottles-white_320x400_crop_center.jpg);
+}
+main .second-section .item-container .item-box .image-box3 {
+  background-image: url(../image/PowerCouple-Babe_CoralBottlesPDP-1_320x400_crop_center.png);
+}
+main .second-section .item-container .item-box ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+}
+main .second-section .item-container .item-box ul li:nth-child(1) {
+  padding: 0px 10px;
+  border-right: 1px solid gray;
+}
+main .second-section .item-container .item-box ul li:nth-child(2) {
+  color: #CFB174;
+}
+main .second-section .item-container .item-box .item-name {
+  padding-top: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  font-size: 25px;
+}
+main .second-section .item-container .item-box .price {
+  display: inline-block;
+  letter-spacing: 0.1em;
+  padding-bottom: 5px;
+}
+main .second-section .item-container .item-box .cart-box {
+  margin: 20px 112.5px 0;
+  line-height: 50px;
+  width: 200px;
+  height: 50px;
+  border: 1px solid gray;
+  font-family: "Abel", sans-serif;
+  transition: 0.4s;
+}
+main .second-section .item-container .item-box .cart-box:hover {
+  background-color: #414141;
+  color: #fff;
+}
+main .second-section .item-container .item-box1:hover .image-box1 {
+  background-image: url(../image/LikeSatinPDP-2_320x400_crop_center.jpg);
+}
+main .second-section .item-container .item-box2:hover .image-box2 {
+  background-image: url(../image/PowerCouple-Cocoa_SageBlobs-white_320x400_crop_center.jpg);
+}
+main .second-section .item-container .item-box3:hover .image-box3 {
+  background-image: url(../image/babecoral-blobs-white_320x400_crop_center.png);
+}
+main .third-section {
+  background-color: #DEE8E9;
+}
+main .third-section .left-article02 {
+  background-image: url(../image/Blog-6_467e8aa9-fe25-415a-bc26-43dcef42bf94_376x376_crop_center.jpg);
+}
+main .third-section .right-article02 {
+  margin-bottom: 80px;
+}
+main .third-section .right-article02 span {
+  position: absolute;
+  top: 35%;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+}
+main .fourth-section {
+  height: 540px;
+  background-color: #F3EDE8;
+  margin-bottom: -80px;
+}
+main .fourth-section .left-article03 {
+  background-image: url(../image/custom_resized_2b8a5365-3d08-4598-a24b-cbe2a67b70fa_1440x970_crop_center.jpg);
+}
+main .fourth-section .right-article03 span {
+  position: absolute;
+  top: 35%;
+  font-size: 16px;
+  font-family: "Abel", sans-serif;
+}
+main .fourth-section .right-article03 .show-box {
+  border: none;
+}
+main .fifth-section {
+  height: 540px;
+  background-color: #F3EDE8;
+  margin-bottom: -80px;
+}
+main .fifth-section .left-article04 .show-box {
+  border: none;
+}
+main .fifth-section .right-article04 {
+  background-image: url(../image/custom_resized_05139ce8-5d87-4093-9b38-dc87aa0d841c_1440x970_crop_center.jpg);
+}
+main .sixth-section {
+  height: 540px;
+  background-color: #F3EDE8;
+}
+main .sixth-section .left-article05 {
+  background-image: url(../image/Blog-5_277fe090-7b56-401d-a08c-b4567e55555c_1440x970_crop_center.jpg);
+}
+main .sixth-section .right-article05 {
+  margin-bottom: 80px;
+}
+main .sixth-section .right-article05 p {
+  width: 60%;
+}
+main .sixth-section .right-article05 .show-box {
+  border: none;
+}
+main .seventh-section {
+  width: 1640px;
+  height: 480px;
+  text-align: center;
+  padding-top: 50px;
+}
+main .seventh-section p {
+  font-size: 12px;
+  padding-bottom: 30px;
+  font-family: "Abel", sans-serif;
+  letter-spacing: 0.4em;
+}
+main .seventh-section h2 {
+  margin: 0 auto;
+  font-size: 36px;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 40px;
+  width: 50%;
+  word-spacing: 1px;
+  line-height: 35px;
+  margin-bottom: 150px;
+}
+main .seventh-section .write-email {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  width: 680px;
+  height: 90px;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+}
+main .seventh-section .bxs-right-arrow-square {
+  font-size: 70px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+}
+main .eight-section {
+  background-color: #F9DBBE;
+}
+main .eight-section .left-article06 {
+  background-image: url(../image/ezgif.com-gif-maker_12f641c3-5270-4c23-a332-35e37ac7cf43_699x699_crop_center.gif);
+}
+main .ninth-section {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 410px);
+  grid-template-rows: repeat(2, 410px);
+}
+main .ninth-section div {
+  transition: 0.6s;
+}
+main .ninth-section div:nth-child(1) {
+  background-image: url(../image/Blog-6_467e8aa9-fe25-415a-bc26-43dcef42bf94_376x376_crop_center.jpg);
+}
+main .ninth-section div:nth-child(2) {
+  background-image: url(../image/Blog-7_a8357d79-8c36-4f4d-8dbf-7d6f22ed2c78_480x480_crop_top.jpg);
+}
+main .ninth-section div:nth-child(3) {
+  background-image: url(../image/Like_Satin_PDP-5_0.6x_480x480_crop_top.jpg);
+}
+main .ninth-section div:nth-child(4) {
+  background-image: url(../image/IMG_2940_480x480_crop_top.jpg);
+}
+main .ninth-section div:nth-child(5) {
+  background-image: url(../image/Like_Satin_PDP-4_480x480_crop_top.jpg);
+}
+main .ninth-section div:nth-child(6) {
+  background-image: url(../image/Like_Satin_PDP-6_480x480_crop_top.jpg);
+}
+main .ninth-section div:nth-child(7) {
+  background-image: url(../image/IMG_6446_480x480_crop_top.jpg);
+}
+main .ninth-section div:nth-child(8) {
+  background-image: url(../image/Blog-5_277fe090-7b56-401d-a08c-b4567e55555c_1440x970_crop_center.jpg);
+}
+main .ninth-section div:hover {
+  opacity: 0.5;
+}
+main .tenth-section {
+  width: 1640px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .tenth-section p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+}
+main .tenth-section p span {
+  color: lightgray;
+  cursor: pointer;
+}
+main .tenth-section p span:hover {
+  color: black;
+}
+main footer {
+  width: 100%;
+  height: 270px;
+  background-color: #F3EDE8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main footer div {
+  width: 33.333333%;
+  height: 180px;
+  border-right: 1px solid black;
+  text-align: center;
+  font-family: "Abel", sans-serif;
+}
+main footer div p {
+  padding: 20px 0;
+  color: rgb(143, 141, 141);
+}
+main footer div ul {
+  cursor: pointer;
+}
+main footer div ul li {
+  padding-bottom: 15px;
+}
+main footer div:nth-child(3) {
+  border: none;
+}
+
+@media screen and (max-width: 1640px) {
+  main .header {
+    width: 50%;
+  }
+  main .first-section {
+    width: 60%;
+  }
+  main .ninth-section {
+    grid-template-columns: repeat(2, 410px);
+    grid-template-rows: repeat(4, 410px);
+  }
+}

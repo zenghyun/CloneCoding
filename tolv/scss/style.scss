@@ -1,0 +1,462 @@
+@import "_reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Yeseva+One&display=swap');
+
+body {
+  width: 100%;
+  height: 200vh;
+  font-family: 'Yeseva One', cursive;
+    cursor: none;
+    /* 커스텀 커서 스타일 정의해주기 */
+    .cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+    background-color: #fad874b9;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center center;
+    z-index: 10;
+    transition: all 0.5s;
+    
+    ul {
+      display: flex;
+      gap: 30px;
+      font-size: 20px;
+      li {
+        padding-bottom: 5px;
+      }
+      li:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+
+    #logo {
+      font-size: 45px;
+      font-weight: 500;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      display: flex;
+
+      span {
+        transform: rotateZ(-15deg);
+        margin: 0 -1px;
+      }
+    }
+
+    .find {
+      z-index: 100;
+      margin-left: 320px;
+      margin-top: -20px;
+        img {
+          width: 40px;
+          transition: 0.5s;
+        }
+  }
+  img:hover{
+    transform: scale(1.2);
+  }
+  }
+
+  .scrolledDown {
+    background-color: white;
+    box-shadow: 0 5px 5px 1px #8a8888;
+  }
+
+  .main-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .left-article {
+      .img {
+        margin-top: -5px;
+        width: 100%;
+        height: 1300px;
+      }
+    }
+
+    .right-article {
+      font-family: 'Yeseva One', cursive;
+      height: 6500px;
+      .text-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0 5%;
+        min-width: 500px;
+          h2 {
+            font-size: 50px;
+            margin-bottom: 40px;
+          }
+          .sub-text {
+            & span {
+              font-size: 14px;
+              color: #FF652B;
+              border-bottom: 1px solid #FF652B;
+            }
+          }
+        }
+
+      }
+
+  }
+
+  .middle-section{
+    margin-top: -13px;
+    width: 100%;
+    height: 600px;
+    background-color: #EFCB56;
+    margin-bottom: 5px;
+
+    .middle-text{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
+      & p:first-child {
+        margin-top: 120px;
+        font-size: 55px;
+      }
+      .main-text {
+        font-size: 32px;
+        margin: 20px 20% 50px 20%;
+        line-height: 40px;
+      }
+      .sub-text {
+        & span{
+          color: #FF652B;
+              border-bottom: 1px solid #FF652B;
+        }
+      }
+    }
+  }
+
+  .bottom-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 470px);
+    gap: 3px;
+    article{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 2s;
+      .product-info{
+        display: none;
+      }
+        & .product-info-effect{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-size: 30px;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 100px;
+          }
+        }
+      }
+      article:hover {
+       filter: blur(5px);
+     }
+      article:first-child {
+        grid-column: 1/3;
+      background-image: url(../image/Cherry-Sofa-Lookbook-3-web@2x.jpg);
+    }
+     article:nth-child(2) {
+      background-image: url(../image/Figura-chair-blackoak_2-web@2x.jpg);
+    }
+     article:nth-child(3) {
+      background-image: url(../image/Inlay-Chair-Lookbook-61-web@2x.jpg);
+    }
+     article:nth-child(4) {
+      background-image: url(../image/Bourbon_1-web@2x.jpg);
+    }
+     article:nth-child(5) {
+      grid-column: 2/4;
+      background-image: url(../image/Copal-3_MLF_1-web@2xv2.jpg);
+    }
+     article:nth-child(6) {
+      background-image: url(../image/Kitsune-1_pine931_1-web@2x.jpg);
+    }
+     article:nth-child(7) {
+      grid-column: 1/3;
+      background-image: url(../image/Kile-Coffeetable-Lookbook-75-web@2x.jpg);
+    }
+     article:nth-child(8) {
+      background-image: url(../image/mooli-red_1-web@2x.jpg);
+    }
+     article:nth-child(9) {
+      background-image: url(../image/Com-Chair-Lookbook-74-web@2xv2.jpg);
+    }
+     article:nth-child(10) {
+      grid-column: 1/3;
+      background-image: url(../image/th-Portobello-W-Sofa@2x.jpg);
+    }
+     article:nth-child(11) {
+      background-image: url(../image/th-Papa-Cushion-1@2x-1.jpg);
+    }
+     article:nth-child(12) {
+      background-image: url(../image/th-Neuf-ST@2x.jpg);
+    }
+  }
+.setBgColor {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4, 470px);
+  background-color: #535851;
+}
+  footer {
+    width: 100%;
+    height: 800px;
+    background-color: #535851;
+    color: #fff;
+    transition: 0.5s;
+ 
+    nav{
+        display: flex;
+        justify-content: space-around;
+
+      ul {
+         margin-top: 150px;
+         font-size: 20px;
+        li {
+          margin-bottom: 20px;
+        }
+        li:first-child {
+          color: #9A9D99;
+        }
+        
+        li:hover {
+          color:#000;
+        }
+       }
+    }
+    p {
+      margin-top: 150px;
+      margin-left: 150px;
+    }
+  }
+}
+
+
+@media  screen and (max-width: 1700px) {
+  body{
+   & .bottom-section {
+     & article{
+        background-size: contain;
+      }
+    }
+  }
+}
+@media  screen and (max-width: 1400px) {
+  body{
+   & .bottom-section {
+    grid-template-rows: repeat(5, 300px);
+     & article{
+      background-size: cover;
+      }
+    }
+  }
+}
+
+@media  screen and (max-width: 1150px) {
+  body{
+    header {
+      grid-template-columns: repeat(3, 1fr);
+      & nav{ 
+        & ul{
+          margin-left: 20px;
+          font-size: 15px;
+          & li {
+            width: max-content;
+          }
+        }
+      }
+      & .find {
+        margin-left: 140px;
+      }
+    }
+    & .bottom-section{
+      grid-template-rows: repeat(5, 250px);
+    }
+  }
+}
+
+@media  screen and (max-width: 1024px) {
+  body{
+
+    .middle-section {
+      & .middle-text {
+        & p:first-child {
+          font-size: 40px;
+        }
+        & .main-text {
+          width: 90%;
+          font-size: 30px;
+        }
+     }
+   }
+
+    & .bottom-section{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(6, 250px);
+      & article:nth-child(5) {
+        grid-column: 1/3;
+      }
+      & article:nth-child(6)
+      {
+        grid-column: 3/4;
+        grid-row: 2/3;
+      }
+      & article:nth-child(8)
+      {
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+    }
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  body{
+    header {
+      grid-template-columns: repeat(2, 1fr);
+      height: 110px;
+      & nav{ 
+        grid-column: 1/-1;
+        grid-row: 2/3;
+          & ul {
+            margin-top: 10px;
+            gap:70px;
+          }
+      }
+      & #logo {
+        margin-left: -40px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+    }
+
+    .main-section {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 500px);
+      .left-article {
+        .img {
+          height: 500px;
+        }
+     
+      }
+    .right-article {
+     display: none;
+    }
+    }
+
+    .middle-section {
+      & .middle-text {
+        & p:first-child {
+          font-size: 30px;
+        }
+        & .main-text {
+          width: 90%;
+          font-size: 20px;
+        }
+     }
+   }
+
+    & .bottom-section{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(8, 250px);
+      & article:nth-child(1) {
+        grid-column: 1/-1;
+      }
+      & article:nth-child(2) {
+        grid-column: 1/2;
+      }
+      & article:nth-child(3) {
+        grid-column: 2/3;
+      }
+      & article:nth-child(4) {
+        grid-column: 1/2;
+      }
+      & article:nth-child(5) {
+        grid-column: 1/3;
+      }
+      & article:nth-child(6)
+      {
+        grid-column: 2/3;
+        grid-row: 3/4;
+      }
+      & article:nth-child(8)
+      {
+        grid-column: 1/2;
+        grid-row: 6/7;
+      }
+      & article:nth-child(9)
+      {
+        grid-column: 2/3;
+        grid-row: 6/7;
+      }
+      & article:nth-child(10)
+      {
+        grid-row: 7/8;
+      }
+    }
+    footer {
+      font-size: 25px;
+      text-align: center;
+      height: 800px;
+      & nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        & ul{
+          margin-top: 30px;
+          font-size: 16px;
+        }
+      }
+      & p {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media  screen and (max-width: 576px) {
+  body{
+    .middle-section {
+      & .middle-text {
+        & p:first-child {
+          margin-top: 80px;
+        }
+     }
+   }
+
+   & .bottom-section {
+    & article{
+      & .product-info-effect{
+        font-size: 25px;
+      }
+    }
+   }
+    }
+   
+  }

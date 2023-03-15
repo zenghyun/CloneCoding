@@ -1,0 +1,159 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body .container .right_number_row, body .container .left_number_row {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 1px;
+}
+
+body .container .right_number_row div, body .container .left_number_row div {
+  background-color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  background-color: #AF7832;
+  color: #AF7832;
+  font-size: 30px;
+  font-weight: bold;
+}
+body .container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  grid-template-rows: 1fr 5fr 1fr;
+  gap: 1px;
+}
+body .container span {
+  background-color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+body .container .right_number_row {
+  grid-column: 3/-1;
+}
+body .container .number {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+body .container .number_row div:hover {
+  background-color: #AF7832;
+  color: #fff;
+}
+body .container .image-container {
+  background-image: url(../image/barry-7-768x768.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .container .scroll-bar {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+body .container .scroll-bar span {
+  position: absolute;
+  animation: scrolling 10s infinite linear;
+}
+@keyframes scrolling {
+  0% {
+    left: 100%;
+  }
+  50% {
+    left: 0%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 5fr 1fr;
+  }
+  body .container .logo {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  body .container .image-container {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+  body .container .menu {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+  }
+  body .container .left_number_row {
+    grid-row: 4/5;
+  }
+  body .container .right_number_row {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  body .container .scroll-bar {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .container .image-container {
+    grid-row: 1/4;
+  }
+}

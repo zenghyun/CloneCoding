@@ -1,0 +1,16 @@
+%sideDiv {      
+grid-row: 2/ 3;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 1px;
+}
+
+%sideDivChild {
+  background-color: #fff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+

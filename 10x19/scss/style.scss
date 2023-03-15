@@ -1,0 +1,128 @@
+@import "_reset.scss";
+@import "_variable.scss";
+@import "_extend.scss";
+
+body {
+  height: 100vh;
+  background-color: $bg;
+  color: $bg;
+  font-size: 30px;
+  font-weight: bold;
+  .container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    gap: 1px;
+  
+    & span {
+      background-color: #fff;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .left_number_row {
+      @extend %sideDiv;
+
+      & div {
+        @extend %sideDivChild;
+      }
+    }
+
+    & .right_number_row {
+      grid-column: 3/-1;
+      @extend %sideDiv;
+
+      & div {
+        @extend %sideDivChild;
+      }
+    }
+    & .number{
+      cursor:pointer;
+      transition: all 0.3s;
+    }
+    & .number_row div:hover {
+      background-color: $bg;
+      color: #fff;
+    }
+    & .image-container {
+      background-image: url(../image/barry-7-768x768.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    & .scroll-bar {
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      & span {
+        position: absolute;
+        animation: scrolling 10s infinite linear;
+      }
+    }
+
+    @keyframes scrolling{
+      0% { left : 100%;}
+      50% { left : 0%;}
+      100% { left : -200%;}
+    }
+  }
+
+}
+
+@media  screen and (max-width:1000px) {
+  body {
+  & .container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 5fr 1fr;
+    .logo {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+    }
+    .image-container {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+    }
+    .menu {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+    }
+    
+    & .left_number_row {
+      @extend %sideDiv;
+      grid-row: 4/5;
+      & div {
+        @extend %sideDivChild;
+      }
+    }
+
+    & .right_number_row {
+      grid-column: 2/3;
+      grid-row: 4/5;
+      @extend %sideDiv;
+
+      & div {
+        @extend %sideDivChild;
+      }
+    }
+
+    .scroll-bar {
+      grid-column: 1/-1;
+      grid-row: 5/6;
+    }
+    
+  }
+}
+}
+
+@media  screen and (max-width:600px) {
+ body {
+  & .container {
+   & .image-container {
+      grid-row: 1/4;
+    }
+  }
+ }
+}
